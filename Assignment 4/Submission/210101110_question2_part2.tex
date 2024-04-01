@@ -1,0 +1,52 @@
+\documentclass[12pt]{article} % starting the document
+\usepackage{amsfonts}% installing all the relevant packages
+\usepackage{amssymb}
+\usepackage{ upgreek }
+\usepackage[version=4]{mhchem}
+\usepackage{breqn}
+\usepackage[margin=1in]{geometry}
+\begin{document} % starting of the document
+\thispagestyle{empty} % removing the page number
+$$ \iiint \limits_{V}f(x,y,z)\;dV=F $$
+$$\frac{dx}{dy} = x'= \lim_{h \to 0}\frac{f(x+h)-f(x)}{h} $$
+\begin{equation*} % writing the mod function using begin function
+\lvert x \lvert  = 
+    \begin{cases}
+        -x, & \text{if } x<0 \\
+        x, & \text{if } x\geq 0
+    \end{cases}
+\end{equation*}
+$$F(x) = A_0+\sum_{n=1}^{N}\left[A_ncos\left(\frac{2\pi nx}{P}\right)+B_nsin\left(\frac{2\pi nx}{P}\right)\right]$$
+$$\sum_{n}\frac{1}{n^s}=\prod_{p}\frac{1}{1-\frac{1}{p^s}}$$
+$$m\ddot x + c\dot x + kx = F_0sin\left(2\pi ft\right)$$
+\begin{align*}
+f(x) &= x^2+3x+5x^2+8+6x \\
+&= 6x^2+9x+8 \\
+&=x\left(6x+9\right)+8
+\end{align*}
+$$X_0 = \frac{F_0}{k}\frac{1}{\sqrt{\left(1-r^2\right)^2+\left(2\zeta r\right)^2}}$$\\
+$$G_{\mu v} \equiv R_{\mu v} - \frac{1}{2}Rg_{\mu v} = \frac{8\pi G}{c^4}T_{\mu v}$$\
+\begin{align*} % writing chemical equations via text mode
+\text{6CO}_2 + \text{6H}_2\text{O} \rightarrow \text{C}_6\text{H}_{12}\text{O}_6+\text{6O}_2
+\end{align*}
+$$\text{SO}_4^{2-} + \text{Ba}^{2+} \rightarrow  \text{BaSO}_4$$
+$$
+\begin{pmatrix}
+a_{11} & a_{12} & \cdots & a_{1n} \\
+a_{21} & a_{22} & \cdots & a_{2n} \\
+\vdots  & \vdots  & \ddots & \vdots  \\
+a_{n1} & a_{n2} & \cdots & a_{nn} 
+\end{pmatrix}\begin{pmatrix}
+v_1 \\
+v_2 \\
+\vdots \\
+v_n
+\end{pmatrix}=\begin{pmatrix}
+w_1 \\
+w_2 \\
+\vdots \\
+w_n
+\end{pmatrix}$$
+$$\frac{\partial \textbf{u}}{\partial t} + \left(\textbf{u}.\nabla\right)\textbf{u} -\nu\nabla^2\left(\textbf{u}\right) = -\nabla \textbf{h} $$
+$$\alpha A \beta B\gamma \Upgamma \delta \Updelta \pi \Pi \omega \Omega$$ % writing relevant code for the symbols
+\end{document}

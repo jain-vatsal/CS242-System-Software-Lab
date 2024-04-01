@@ -1,0 +1,49 @@
+\documentclass[12pt]{article} % starting the document
+\usepackage{amsmath} % installing all the relevant packages
+\usepackage[arrowdel]{physics}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{ upgreek }
+\usepackage[version=4]{mhchem}
+\usepackage{xfrac}
+\usepackage{xcolor}
+\usepackage[spanish]{babel}
+\usepackage{breqn}
+\title{Hello World!} % including the title
+\author{Vatsal Jain} % author name
+\date{January 1, 1831}
+\begin{document}
+\maketitle % used to put the title into the pdf
+\section{Getting Started}
+\textbf{Hello World!} Today I am learning \LaTeX. \LaTeX is a great program for writing math. I can write in line math such as $a^2+b^2 = c^2$. I can also give equations their own space:\thispagestyle{empty} % used to remove page number
+\begin{align}
+\gamma^2 + \theta^2 &= \omega^2 % \ is used to write the relevant symbols.
+\end{align} % aligning the formula to the center
+``Maxwell's Equations'' are made for James Clark Maxwell and are as follow:
+\begin{align}
+\vec{\nabla}.\vec{E} &= \frac{\rho}{\varepsilon_0} & & \text{Gauss's Law} \\ % all the symbols have been written via relevant codes
+\vec{\nabla}.\vec{B} &= 0 & & \text{Gauss's Law for Magnetism}\\
+\vec{\nabla} \times \vec{E} &= -\frac{\partial \vec{B}}{\partial t} & & \text{Faraday's Law of Induction} \\
+\vec{\nabla} \times \vec{B} &= \mu_0\left(\varepsilon_0\frac{\partial \vec{E}}{\partial t}+\vec{J} \right) & & \text{Ampere's Circuital Law} 
+\end{align}
+Equations \textcolor{blue}{2}, \textcolor{blue}{3}, \textcolor{blue}{4} and \textcolor{blue}{5} are some of the most important in physics
+\section{What about Matrix Equations?}
+$$\begin{pmatrix} % pmatrix stands for matrix via parenthesis
+a_{11} & a_{12} & \cdots & a_{1n} \\
+a_{21} & a_{22} & \cdots & a_{2n} \\
+\vdots  & \vdots  & \ddots & \vdots  \\
+a_{n1} & a_{n2} & \cdots & a_{nn} 
+\end{pmatrix}\begin{bmatrix} % b matrix is used for matrix with bold brackets
+v_1 \\
+v_2 \\
+\vdots \\
+v_n
+\end{bmatrix}=\begin{matrix}
+w_1 \\
+w_2 \\
+\vdots \\
+w_n
+\end{matrix} $$
+\pagebreak % used for changing the page
+\end{document}
